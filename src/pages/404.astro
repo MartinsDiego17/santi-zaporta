@@ -1,0 +1,30 @@
+---
+import ArrowBack from "../components/404/ArrowBack.astro";
+import Logo from "../components/Logo.astro";
+import LayoutAlt from "../layouts/LayoutAlt.astro";
+---
+
+<LayoutAlt title="Página no encontrada">
+    <article class="flex flex-col w-screen h-screen bg-[#121212]">
+        <div class="pt-[10%] pl-[10%]">
+            <h2 class="text-white font-extrabold text-[5rem] text-balance">
+                NO PUDIMOS ENCONTRAR ESA PÁGINA
+            </h2>
+            <a
+                href="/"
+                class="flex justify-between place-items-center w-fit gap-x-2 text-[#ddd]"
+            >
+                <span><ArrowBack /></span>
+                <span>Volver a la página inicial</span>
+            </a>
+        </div>
+        <div class="pb-[10%] mt-auto flex justify-end pr-[10%]">
+            <h2 class="text-[1.2rem] font-extrabold tracking-[5px]">
+                <span class="text-black bg-[var(--primary)] px-[5px]"
+                    >SANTI</span
+                >
+                <span class="text-white bg-transparent">ZAPORTA</span>
+            </h2>
+        </div>
+    </article>
+</LayoutAlt>

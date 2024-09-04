@@ -1,0 +1,58 @@
+---
+import Logo from "./Logo.astro";
+import Instagram from "./footer/Instagram.astro";
+import Youtube from "./footer/Youtube.astro";
+import Whatsapp from "./footer/Whatsapp.astro";
+import Copyright from "./footer/Copyright.astro";
+---
+
+<footer class="w-screen h-fit">
+    <div class="w-[60%] mx-auto flex justify-between py-[10vh]">
+        <article>
+            <Logo />
+            <ul
+                class="mt-[10%] flex place-items-center justify-between w-fit gap-x-8"
+            >
+                <li>
+                    <a
+                        target="_blank"
+                        href="https://www.instagram.com/santizzaporta_/"
+                        ><Instagram /></a
+                    >
+                </li>
+                <li>
+                    <a
+                        target="_blank"
+                        href="https://www.youtube.com/@santizaporta"
+                        ><Youtube /></a
+                    >
+                </li>
+                <li>
+                    <a
+                        target="_blank"
+                        href="https://api.whatsapp.com/message/TGEKMJVVSAEDE1?autoload=1&app_absent=0"
+                        ><Whatsapp /></a
+                    >
+                </li>
+            </ul>
+        </article>
+        <article>
+            <p
+                class="text-[#ccc] text-[.8rem] flex place-items-center justify-between gap-x-2"
+            >
+                <span><Copyright /></span>
+                <span
+                    >2024 - Santiago Zaporta. Todos los derechos reservados</span
+                >
+            </p>
+            <p class="text-[#ccc] text-[.8rem] text-right mt-[2%]">
+                <span>Desarrollado por</span>
+                <a
+                    class="text-[var(--clr-pulsetech)] font-semibold"
+                    href="https://pulsetech-chi.vercel.app/"
+                    target="_blank">pulsetech</a
+                >
+            </p>
+        </article>
+    </div>
+</footer>

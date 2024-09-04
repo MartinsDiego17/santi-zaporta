@@ -1,0 +1,26 @@
+---
+const { features } = Astro.props;
+import CheckIcon from "./CheckIcon.astro";
+---
+
+<ul class="features mt-[7%] z-10 relative">
+    {
+        features.map((feature: string) => (
+            <li class="flex justify-between w-fit place-items-center gap-x-2">
+                <span>
+                    <CheckIcon />
+                </span>
+                <span>{feature}</span>
+            </li>
+        ))
+    }
+</ul>
+
+<style>
+    li {
+        margin-bottom: 1.5vh;
+        font-weight: 100;
+        font-size: 0.75rem;
+        color: #ddd;
+    }
+</style>

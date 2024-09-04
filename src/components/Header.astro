@@ -1,0 +1,50 @@
+---
+import Logo from "./Logo.astro";
+---
+
+<nav class="border-b-1 border-transparent fixed w-screen h-fit top-0 z-50">
+
+    <div class="py-[3vh] flex justify-between place-items-center w-[80%] mx-auto">
+        <Logo />
+        <ul class="flex justify-between w-fit place-items-center gap-x-12">
+            <a href="/entrenamientos"><li>Entrenamientos</li></a>
+            <a href="/alimentación"><li>Alimentación</li></a>
+            <a href="/clases-grupales"><li>Clases grupales</li></a>
+            <a href="#contact"><li>Contacto</li></a>
+        </ul>
+    </div>
+
+</nav>
+
+<style>
+    @keyframes blurnav {
+        20% {
+            border-color: #222;
+        }
+        100% {
+            border-color: #222;
+            background: rgba(0,0,0, 0.5);
+            -webkit-backdrop-filter: blur(30px);
+            backdrop-filter: blur(30px);
+            transition: 0.3s;
+            padding: 1vh 0;
+        }
+    }
+
+    nav {
+        animation: blurnav linear both;
+        animation-timeline: scroll();
+        animation-range: 0 500px;
+        transition: 0.2s;
+    }
+
+    ul li {
+        cursor: pointer;
+        color: #ccc;
+        font-size: .8rem;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+</style>

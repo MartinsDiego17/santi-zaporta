@@ -1,0 +1,63 @@
+import React, { useCallback, useEffect } from 'react'
+import useEmblaCarousel from 'embla-carousel-react'
+import Autoplay from 'embla-carousel-autoplay'
+import "./carousel.css";
+import { testimonios } from '../../data/testimonios';
+import ArrowLeft from './ArrowLeft';
+import ArrowRight from './ArrowRight';
+import { Button } from '@nextui-org/react';
+
+
+export const Carousel = () => {
+
+    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false }, [Autoplay()])
+
+    const scrollPrev = useCallback(() => {
+        if (emblaApi) emblaApi.scrollPrev()
+    }, [emblaApi])
+
+    const scrollNext = useCallback(() => {
+        if (emblaApi) emblaApi.scrollNext()
+    }, [emblaApi])
+
+
+    return (
+        <div className="h-fit embla pb-[10vh] text-white" ref={emblaRef}>
+            <div className="mx-auto h-fit embla__container">
+
+                {
+                    testimonios.map((testimony, index) => (
+                        <div className='embla__slide' key={index}>
+                            <section className='w-full flex justify-between place-items-center'>
+
+                                <article className='w-[50%]'>
+                                    <img className='w-full max-h-[70vh] h-[50vh]' src={testimony.img} />
+                                </article>
+                                <article className='w-[50%]'>
+                                    <img className='max-h-[70vh] w-full h-[50vh]' src={testimony.img} />
+                                </article>
+
+                            </section>
+                        </div>
+                    ))
+                }
+            </div>
+
+            <div className="w-full h-fit py-[2vh] mt-[3vh] flex justify-between place-items-center">
+                <h2 className="text-[var(--light)] shadow-text text-center w-full text-[2rem] font-semibold tracking-[3px]">ANTES</h2>
+                <h2 className="text-[var(--light)] shadow-text text-center w-full text-[2rem] font-semibold tracking-[3px]">DESPUÉS</h2>
+            </div>
+
+            <div className='flex justify-center gap-x-4'>
+                <Button isIconOnly className="bg-transparent w-fit h-fit p-[2vh]  embla__prev" onClick={scrollPrev}>
+                    <ArrowLeft />
+                </Button>
+                <Button isIconOnly className="bg-transparent w-fit h-fit p-[2vh]  embla__prev" onClick={scrollNext}>
+                    <ArrowRight />
+                </Button>
+            </div>
+
+        </div>
+    )
+}
+

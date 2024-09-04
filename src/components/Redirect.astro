@@ -1,0 +1,69 @@
+---
+import { Button } from "@nextui-org/react";
+---
+
+<div
+    class="top-0 left-0 pr-[3vh] pb-[3vh] fixed w-screen h-screen flex justify-end place-items-end"
+>
+<a href="#home">
+    <Button
+    className="button-redirect p-[1.5vh] rounded-[7px] bg-transparent border-[1.5px] border-white"
+    isIconOnly
+    size="lg"
+    client:visible
+>
+    <span class="transition duration-200 transform rotate-[45deg]">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-arrow-up"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="white"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+        >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 5l0 14"></path>
+            <path d="M18 11l-6 -6"></path>
+            <path d="M6 11l6 -6"></path>
+        </svg>
+    </span>
+</Button>
+</a>
+</div>
+
+<style>
+    div {
+        pointer-events: none;
+    }
+    .button-redirect {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.2s ease, transform 0.2s ease;
+        pointer-events: auto;
+    }
+    .button-redirect:hover {
+        transform: scale(1.05);
+    }
+    .show-button {
+        opacity: 1;
+        transform: translateY(0);
+    }
+   button:hover span {
+        transform: rotate(0);
+    }
+</style>
+
+<script>
+    document.addEventListener("scroll", () => {
+        const button = document.querySelector(".button-redirect");
+        if (window.scrollY > 10) {
+            button?.classList.add("show-button");
+        } else {
+            button?.classList.remove("show-button");
+        }
+    });
+</script>

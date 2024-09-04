@@ -1,0 +1,23 @@
+---
+import IconTestimonios from "./testimonios/IconTestimonios.astro";
+import { Carousel } from "./testimonios/Carousel";
+---
+
+<article
+    id="testimonies"
+    class="w-full h-fit min-h-screen mt-[20vh] flex justify-center place-items-center flex-col"
+>
+    <div class="w-[80%] mx-auto flex flex-col justify-center">
+        <h2
+            class="mb-[10vh] flex place-items-center justify-center gap-x-4 text-[#ddd] font-bold text-[1.8rem]"
+        >
+            <span
+                >Testimonios de mis <span class="text-[var(--primary)]"
+                    >clientes</span
+                >
+            </span>
+
+        </h2>
+        <Carousel client:visible />
+    </div>
+</article>

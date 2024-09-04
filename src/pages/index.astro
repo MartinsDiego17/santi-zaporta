@@ -1,0 +1,24 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Home from "../components/Home.astro";
+import About from "../components/About.astro";
+import Services from "../components/Services.astro";
+import Testimonios from "../components/Testimonios.astro";
+import Redirect from "../components/Redirect.astro";
+import Comunidad from "../components/Comunidad.astro";
+import Zenith from "../components/Zenith.astro";
+import Cta from "../components/Cta.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Zaporta | Inicio">
+    <Home />
+    <About />
+    <Services />
+    <Testimonios />
+    <Redirect client:visible />
+    <Comunidad />
+    <Zenith />
+    <Cta />
+    <Footer />
+</Layout>

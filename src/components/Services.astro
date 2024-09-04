@@ -1,0 +1,53 @@
+---
+import { services } from "../data/services";
+import Card from "./services/Card.astro";
+import ServiceIcon from "./services/ServiceIcon.astro";
+---
+
+<article
+id="services"
+    class="flex-col flex justify-center place-items-center min-h-screen w-screen"
+>
+    <div class="w-[80%]">
+        <h2
+            class="mb-[10vh] w-full flex place-items-center justify-center gap-x-4 text-[#ddd] font-bold text-[1.8rem]"
+        >
+            <span>Mis servicios</span>
+        </h2>
+
+        <div class="grid grid-cols-3 gap-x-6">
+            {
+                services.map((service, index) => (
+                    <Card
+                        client:visible
+                        title={service.title}
+                        features={service.features}
+                        index={index}
+                    />
+                ))
+            }
+        </div>
+
+        <p
+            class="text-[.65rem] w-[80%] text-balance mx-auto mt-[5vh] text-[#ccc]"
+        >
+            Ofrecemos <span class="text-[var(--light)]"
+                >servicios personalizados</span
+            > para ayudarte a alcanzar tus <span class="text-[var(--light)]"
+                >metas de fitness</span
+            >, incluyendo <span class="text-[var(--light)]"
+                >entrenamientos adaptados</span
+            > a tus necesidades y <span class="text-[var(--light)]"
+                >asesoría nutricional</span
+            > para optimizar tu dieta. Además, nuestras <span
+                class="text-[var(--light)]">clases grupales</span
+            > brindan un <span class="text-[var(--light)]"
+                >ambiente motivador</span
+            > para el entrenamiento en equipo. Nuestro enfoque <span
+                class="text-[var(--light)]">flexible</span
+            > y <span class="text-[var(--light)]">personalizado</span> asegura que
+            cada aspecto de tu plan se ajuste a tus objetivos y preferencias, proporcionando
+            una <span class="text-[var(--light)]">experiencia efectiva</span> y enriquecedora.
+        </p>
+    </div>
+</article>

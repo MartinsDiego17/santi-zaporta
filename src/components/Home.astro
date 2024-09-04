@@ -1,0 +1,79 @@
+---
+import ArrowHome from "./home/ArrowHome.astro";
+---
+
+<div
+    id="home"
+    class="z-10 home flex flex-col justify-center place-items-center w-screen h-screen relative"
+>
+    <div class="content-home h-[75%] flex place-items-center justify-center">
+        <h1 class="font-extralight text-[3.5rem]">ZAPORTA COACH</h1>
+    </div>
+
+    <a href="#about">
+        <ArrowHome />
+    </a>
+</div>
+
+<style>
+    @keyframes homeBottom {
+        0% {
+            opacity: 0;
+            letter-spacing: -15px;
+        }
+        100% {
+            opacity: 1;
+            letter-spacing: 50px;
+        }
+    }
+    .content-home {
+        animation: homeBottom 1.5s ease-in forwards;
+        will-change: letter-spacing;
+        animation-timing-function: cubic-bezier(0, 1.04, 0.76, 0.96);
+    }
+    .home {
+        background: linear-gradient(var(--dark-opacity), var(--dark-opacity)),
+            url(../../public/images/home/bg.webp);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        clip-path: polygon(0 83%, 49% 100%, 100% 83%, 100% 0, 0 0);
+    }
+    .home::before {
+        content: "";
+        top: 0;
+        background: linear-gradient(
+            transparent,
+            transparent,
+            transparent,
+            transparent,
+            transparent,
+            black
+        );
+        left: 0;
+        z-index: -1;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(2px);
+    }
+    h1 {
+        color: white;
+    }
+
+    @keyframes moveDown {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(5px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    a {
+        animation: moveDown 2s infinite ease-in-out;
+    }
+</style>
