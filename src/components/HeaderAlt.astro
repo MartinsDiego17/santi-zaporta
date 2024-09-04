@@ -1,0 +1,38 @@
+---
+import LogoAlt from "./LogoAlt.astro";
+---
+
+<nav class="border-b-1 border-transparent fixed w-screen h-fit top-0 z-50">
+
+    <div class="py-[2.5vh] flex place-items-center w-[80%] mx-auto">
+        <LogoAlt />
+    </div>
+
+</nav>
+
+<style>
+    @keyframes blurnav {
+        20% {
+            border-color: #222;
+        }
+        100% {
+            border-color: #222;
+            background: rgba(0,0,0, 0.5);
+            -webkit-backdrop-filter: blur(30px);
+            backdrop-filter: blur(30px);
+            transition: 0.3s;
+            padding: 1vh 0;
+        }
+    }
+
+    nav {
+        animation: blurnav linear both;
+        animation-timeline: scroll();
+        animation-range: 0 500px;
+        transition: 0.2s;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+</style>

@@ -1,5 +1,5 @@
 ---
-const { title, features } = Astro.props;
+const { title, features, route } = Astro.props;
 import Features from "./Features.astro";
 import { Button } from "@nextui-org/react";
 ---
@@ -13,12 +13,14 @@ import { Button } from "@nextui-org/react";
         {title}
     </h2>
     <Features features={features} />
-    <Button
-        client:visible
-        className="mt-[10vh] hover:bg-[#ddd] px-[30px] font-semibold bg-white mx-auto text-black text-[.9rem] flex justify-center rounded-[5px]"
-    >
-        <span>Más información</span>
-    </Button>
+    <a href=`/${route}`>
+        <Button
+            client:visible
+            className="mt-[10vh] hover:bg-[#ddd] px-[30px] font-semibold bg-white mx-auto text-black text-[.9rem] flex justify-center rounded-[5px]"
+        >
+            <span>Más información</span>
+        </Button>
+    </a>
 </div>
 
 <script src="../../scripts/hovercard.js"></script>

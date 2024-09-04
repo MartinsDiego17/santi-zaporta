@@ -3,17 +3,17 @@ import Logo from "./Logo.astro";
 ---
 
 <nav class="border-b-1 border-transparent fixed w-screen h-fit top-0 z-50">
-
-    <div class="py-[3vh] flex justify-between place-items-center w-[80%] mx-auto">
+    <div
+        class="py-[2.5vh] flex justify-between place-items-center w-[80%] mx-auto"
+    >
         <Logo />
         <ul class="flex justify-between w-fit place-items-center gap-x-12">
             <a href="/entrenamientos"><li>Entrenamientos</li></a>
-            <a href="/alimentación"><li>Alimentación</li></a>
+            <a href="/alimentacion"><li>Alimentación</li></a>
             <a href="/clases-grupales"><li>Clases grupales</li></a>
             <a href="#contact"><li>Contacto</li></a>
         </ul>
     </div>
-
 </nav>
 
 <style>
@@ -23,7 +23,7 @@ import Logo from "./Logo.astro";
         }
         100% {
             border-color: #222;
-            background: rgba(0,0,0, 0.5);
+            background: rgba(0, 0, 0, 0.5);
             -webkit-backdrop-filter: blur(30px);
             backdrop-filter: blur(30px);
             transition: 0.3s;
@@ -41,7 +41,7 @@ import Logo from "./Logo.astro";
     ul li {
         cursor: pointer;
         color: #ccc;
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
 
     html {
