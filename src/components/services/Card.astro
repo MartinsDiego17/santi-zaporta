@@ -1,14 +1,15 @@
 ---
-const { title, features, route } = Astro.props;
+const { title, features, route, index } = Astro.props;
 import Features from "./Features.astro";
 import { Button } from "@nextui-org/react";
 ---
 
 <div
+    id={`${index === 1 ? "center-card" : "common"}`}
     class={`card transition duration-200 rounded-[5px] py-[5vh] px-[6vh] group`}
 >
     <h2
-        class="pb-[2vh] text-[1rem] text-white font-bold border-b-1 border-[#444]"
+        class="pb-[2vh] text-[1rem] text-pretty text-white font-bold border-b-1 border-[#444]"
     >
         {title}
     </h2>
@@ -74,5 +75,14 @@ import { Button } from "@nextui-org/react";
     Button {
         position: relative;
         z-index: 5;
+    }
+    #center-card {
+        filter: brightness(150%);
+        transform: scale(1.05);
+    }
+    #center-card button,
+    #center-card h2
+    {
+        filter: brightness(70%);
     }
 </style>

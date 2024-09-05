@@ -8,7 +8,7 @@ interface Contents {
 
 export const AccordionFaq = ({ content }: { content: any }) => {
   return (
-    <Accordion className="dark w-[85%] mx-auto">
+    <Accordion className="dark w-full">
 
       {
         content.map((faqItem: any, index: number) => (

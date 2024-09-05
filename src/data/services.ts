@@ -1,6 +1,6 @@
 export const services = [
     {
-        title: "Entrenamiento personalizado",
+        title: "Ebooks y programas",
         features: [
             "Planes personalizados",
             "Seguimiento constante",
@@ -11,7 +11,7 @@ export const services = [
         route: "entrenamientos"
     },
     {
-        title: "Asesoría nutricional",
+        title: "Asesoría personalizada 1 a 1",
         features: [
             "Evaluación nutricional",
             "Plan personalizado",
@@ -22,7 +22,7 @@ export const services = [
         route: "alimentacion"
     },
     {
-        title: "Clases grupales",
+        title: "Asesorías con entrenadores",
         features: [
             "Ambiente motivador",
             "Clases variadas",
