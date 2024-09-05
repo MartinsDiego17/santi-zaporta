@@ -4,12 +4,16 @@ import Instagram from "./footer/Instagram.astro";
 import Youtube from "./footer/Youtube.astro";
 import Whatsapp from "./footer/Whatsapp.astro";
 import Copyright from "./footer/Copyright.astro";
+import LogoAlt from "./LogoAlt.astro";
+const { isAlt } = Astro.props;
 ---
 
 <footer class="w-screen h-fit">
     <div class="w-[70%] mx-auto flex justify-between py-[10vh]">
         <article>
-            <Logo />
+            {
+                isAlt ? <LogoAlt /> : <Logo />
+            }
             <ul
                 class="mt-[10%] flex place-items-center justify-between w-fit gap-x-8"
             >
