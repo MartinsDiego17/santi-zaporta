@@ -5,16 +5,16 @@ const { image, title, text } = Astro.props;
 <section
     class="local-main relative w-screen h-screen flex justify-between place-items-center"
 >
-    <article class="left relative w-[50%] h-screen">
+    <article class="cel:hidden left relative w-[50%] h-screen">
         <img class="w-full h-full" src={image} />
     </article>
     <article
-        class="flex flex-col justify-center place-items-center pb-[5%] w-[50%] h-screen"
+        class="cel:w-4/5 cel:mx-auto flex flex-col justify-center place-items-center pb-[5%] w-[50%] h-screen"
     >
-        <h2 class="text-left w-[80%] text-white text-[3rem] font-bold">
+        <h2 class="cel:text-center text-left w-[80%] text-white text-[3rem] font-bold">
             {title}
         </h2>
-        <p class="w-[60%] mx-auto text-pretty text-right mt-[3vh] text-[#ccc]">
+        <p class="cel:text-center cel:w-full w-[60%] mx-auto text-pretty text-right mt-[3vh] text-[#ccc]">
             {text}
         </p>
     </article>

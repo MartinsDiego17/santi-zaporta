@@ -6,8 +6,10 @@ import ArrowHome from "./home/ArrowHome.astro";
     id="home"
     class="cel:text-center z-10 home flex flex-col justify-center place-items-center min-w-screen h-screen relative"
 >
-    <div class="content-home h-[75%] flex place-items-center justify-center">
-        <h1 class="font-extralight text-center cel:text-[1.5rem] text-[3.5rem] text-white">
+    <div class="max-w-screen content-home h-[75%] flex place-items-center justify-center">
+        <h1
+            class="font-extralight text-center cel:text-[2rem] text-[3.5rem] text-white"
+        >
             ZAPORTA <br class="hidden cel:visible" /> COACH
         </h1>
     </div>
@@ -28,6 +30,20 @@ import ArrowHome from "./home/ArrowHome.astro";
             letter-spacing: 50px;
         }
     }
+
+    @media (max-width: 768px) {
+        @keyframes homeBottom {
+        0% {
+            opacity: 0;
+            letter-spacing: -15px;
+        }
+        100% {
+            opacity: 1;
+            letter-spacing: 30px;
+        }
+    }
+    }
+
     .content-home {
         overflow: hidden;
         animation: homeBottom 1.5s ease-in forwards;

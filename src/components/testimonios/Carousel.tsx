@@ -31,10 +31,10 @@ export const Carousel = () => {
                             <section className='w-full flex justify-between place-items-center'>
 
                                 <article className='w-[50%]'>
-                                    <img className='w-full max-h-[70vh] h-[50vh]' src={testimony.img} />
+                                    <img className='cel:h-[15vh] w-full max-h-[70vh] h-[50vh]' src={testimony.img} />
                                 </article>
                                 <article className='w-[50%]'>
-                                    <img className='max-h-[70vh] w-full h-[50vh]' src={testimony.img} />
+                                    <img className='cel:h-[15vh] max-h-[70vh] w-full h-[50vh]' src={testimony.img} />
                                 </article>
 
                             </section>
@@ -44,8 +44,8 @@ export const Carousel = () => {
             </div>
 
             <div className="w-full h-fit py-[2vh] mt-[3vh] flex justify-between place-items-center">
-                <h2 className="text-[var(--light)] shadow-text text-center w-full text-[2rem] font-semibold tracking-[3px]">ANTES</h2>
-                <h2 className="text-[var(--light)] shadow-text text-center w-full text-[2rem] font-semibold tracking-[3px]">DESPUÉS</h2>
+                <h2 className="cel:text-[1.2rem] text-[var(--light)] shadow-text text-center w-full text-[2rem] font-semibold tracking-[3px]">ANTES</h2>
+                <h2 className="cel:text-[1.2rem] text-[var(--light)] shadow-text text-center w-full text-[2rem] font-semibold tracking-[3px]">DESPUÉS</h2>
             </div>
 
             <div className='flex justify-center gap-x-4'>

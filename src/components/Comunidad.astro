@@ -17,33 +17,33 @@ const redes = [
 
 <article
     id="community"
-    class="pt-[20vh] flex place-items-center justify-center w-screen h-screen"
+    class="cel:pt-0 pt-[20vh] flex place-items-center justify-center w-screen h-screen cel:h-fit"
 >
-    <div class="w-[70%] min-h-[80vh]">
+    <div class="cel:w-[80%] w-[70%] cel:min-h-[40vh] min-h-[80vh] cel:py-[5vh]">
         <section
-            class="gap-x-16 h-full w-full flex justify-between"
+            class="cel:block gap-x-16 h-full w-full flex justify-between"
         >
-            <article class="w-[45%] h-full font-bold text-[2.5rem]">
-                <h2 class="text-white mb-[5vh]">Mi comunidad</h2>
+            <article class="cel:w-full w-[45%] h-full font-bold text-[2.5rem]">
+                <h2 class="text-white mb-[5vh] cel:mb-0">Mi comunidad</h2>
                 <p class="mb-[2vh] text-[.9rem] text-[#ccc] font-extralight">
                     A lo largo de los años que llevo creando contenido, pude
                     formar una comunidad muy grande y colaborativa.
                 </p>
-                <p class="text-[.9rem] text-[#ccc] font-extralight">
+                <p class="cel:hidden text-[.9rem] text-[#ccc] font-extralight">
                     Con el tiempo, he tenido la oportunidad de construir una
                     comunidad comprometida y unida, donde cada miembro aporta su
                     energía y entusiasmo.
                 </p>
             </article>
 
-            <article class="h-full w-[55%] grid grid-cols-2 gap-16">
+            <article class="cel:w-full h-full w-[55%] grid grid-cols-2 gap-16">
                 {
                     redes.map((red, index) => (
                         <div>
-                            <h2 class="font-bold text-[2rem] text-white tracking-[3px]">
+                            <h2 class="font-extrabold cel:text-[2.5rem] text-[2rem] text-white tracking-[3px]">
                                 +{red.quantity}
                             </h2>
-                            <p class="text-[var(--light)]">{red.text}</p>
+                            <p class="cel:text-[.8rem] cel:text-pretty text-[var(--light)]">{red.text}</p>
                         </div>
                     ))
                 }
@@ -54,6 +54,7 @@ const redes = [
                         src="https://www.youtube.com/embed/MzKH0pYg28M?si=2sOkBocHuBF9CYXh"
                         title="YouTube video player"
                         frameborder="0"
+                        class="cel:mb-auto"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin"
                         allowfullscreen></iframe>

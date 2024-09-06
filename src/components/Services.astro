@@ -5,7 +5,7 @@ import Card from "./services/Card.astro";
 
 <article
 id="services"
-    class="flex-col flex justify-center place-items-center min-h-screen w-screen"
+    class="cel:h-fit flex-col flex justify-center place-items-center min-h-screen w-screen"
 >
     <div class="w-[80%]">
         <h2
@@ -14,7 +14,7 @@ id="services"
             <span>Mis servicios</span>
         </h2>
 
-        <div class="grid grid-cols-3 gap-x-6">
+        <div class="cel:grid-cols-1 cel:gap-x-0 cel:gap-y-10 grid grid-cols-3 gap-x-6">
             {
                 services.map((service, index) => (
                     <Card
@@ -28,7 +28,7 @@ id="services"
         </div>
 
         <p
-            class="text-[.65rem] w-[80%] text-balance mx-auto mt-[5vh] text-[#ccc]"
+            class="cel:w-full cel:text-center cel:text-balance text-[.65rem] w-[80%] text-balance mx-auto mt-[5vh] text-[#ccc]"
         >
             Ofrecemos <span class="text-[var(--light)]"
                 >servicios personalizados</span

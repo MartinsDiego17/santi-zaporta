@@ -7,18 +7,18 @@ const parrafos = [
 import ArrowRedirect from "./zenith/ArrowRedirect.astro";
 ---
 
-<article class="flex justify-between place-items-center w-screen h-screen">
-    <div class="left w-[45%] h-[90vh] ml-[15vh]"></div>
+<article class="cel:h-fit flex justify-between place-items-center w-screen h-screen">
+    <div class="cel:hidden left w-[45%] h-[90vh] ml-[15vh]"></div>
 
-    <div class="pt-[5vh] w-[55%] h-screen flex flex-col px-[10vw]">
+    <div class="cel:w-full pt-[5vh] w-[55%] h-screen flex flex-col px-[10vw]">
         <h2
             class="text-[var(--primary)] font-bold text-[1.2rem] tracking-[3px]"
         >
             MI MARCA DE DISCOS
         </h2>
-        <h2 class="bg-[var(--primary)] w-fit text-black px-[1vh] font-bold text-[2rem] tracking-[5px]">
-            ZENITH
-        </h2>
+            <h2 class="cel:my-[1vh] bg-[var(--primary)] w-fit text-black px-[1vh] font-bold text-[2rem] tracking-[5px]">
+                ZENITH
+            </h2>
         {parrafos.map(parrafo => (
           <p>{parrafo}</p>
         ))}
@@ -41,5 +41,10 @@ import ArrowRedirect from "./zenith/ArrowRedirect.astro";
         font-size: .9rem;
         color: #ccc;
         margin: 2vh 0;   
+    }
+    @media (max-width: 768px) {
+        p {
+            margin: 1vh 0;
+        }
     }
 </style>
