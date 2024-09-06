@@ -4,10 +4,12 @@ import ArrowHome from "./home/ArrowHome.astro";
 
 <div
     id="home"
-    class="z-10 home flex flex-col justify-center place-items-center w-screen h-screen relative"
+    class="cel:text-center z-10 home flex flex-col justify-center place-items-center min-w-screen h-screen relative"
 >
     <div class="content-home h-[75%] flex place-items-center justify-center">
-        <h1 class="font-extralight text-[3.5rem] 2xl:text-[red]">ZAPORTA COACH</h1>
+        <h1 class="font-extralight text-center cel:text-[1.5rem] text-[3.5rem] text-white">
+            ZAPORTA <br class="hidden cel:visible" /> COACH
+        </h1>
     </div>
 
     <a href="#about">
@@ -27,6 +29,7 @@ import ArrowHome from "./home/ArrowHome.astro";
         }
     }
     .content-home {
+        overflow: hidden;
         animation: homeBottom 1.5s ease-in forwards;
         will-change: letter-spacing;
         animation-timing-function: cubic-bezier(0, 1.04, 0.76, 0.96);
@@ -56,10 +59,6 @@ import ArrowHome from "./home/ArrowHome.astro";
         width: 100%;
         backdrop-filter: blur(2px);
     }
-    h1 {
-        color: white;
-    }
-
     @keyframes moveDown {
         0% {
             transform: translateY(0);

@@ -13,7 +13,7 @@ export const AccordionFaq = ({ content }: { content: any }) => {
       {
         content.map((faqItem: any, index: number) => (
           <AccordionItem className="text-tiny text-[#aaa]" key={index} aria-label={faqItem.ariaLabel} title={faqItem.title}>
-            {faqItem.content}
+            <p className="pb-[1vh]">{faqItem.content}</p>
           </AccordionItem>
         ))
       }
