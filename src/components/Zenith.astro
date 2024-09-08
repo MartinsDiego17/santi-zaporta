@@ -1,30 +1,38 @@
 ---
 const parrafos = [
-  "Zenith es una marca de discos de gimnasio que se destaca por su combinación de durabilidad y diseño innovador. Diseñados para satisfacer las exigencias de atletas y entusiastas del fitness, los discos Zenith ofrecen una construcción robusta que garantiza una larga vida útil.",
-  "El diseño de los discos Zenith no solo se centra en la funcionalidad, sino también en la estética. Con un acabado pulido y una gama de colores vibrantes, estos discos añaden un toque de estilo a cualquier gimnasio.",
-  "Zenith se ha comprometido a ofrecer productos que potencien el rendimiento físico y mental de sus usuarios. Con una variedad de opciones de peso, desde discos ligeros hasta pesos pesados, la marca Zenith cubre todas las necesidades de entrenamiento."
+    "Zenith es una marca de discos de gimnasio que se destaca por su combinación de durabilidad y diseño innovador. Diseñados para satisfacer las exigencias de atletas y entusiastas del fitness, los discos Zenith ofrecen una construcción robusta que garantiza una larga vida útil.",
+    "El diseño de los discos Zenith no solo se centra en la funcionalidad, sino también en la estética. Con un acabado pulido y una gama de colores vibrantes, estos discos añaden un toque de estilo a cualquier gimnasio.",
+    "Zenith se ha comprometido a ofrecer productos que potencien el rendimiento físico y mental de sus usuarios. Con una variedad de opciones de peso, desde discos ligeros hasta pesos pesados, la marca Zenith cubre todas las necesidades de entrenamiento.",
 ];
 import ArrowRedirect from "./zenith/ArrowRedirect.astro";
 ---
 
-<article class="cel:h-fit flex justify-between place-items-center w-screen h-screen">
-    <div class="cel:hidden left w-[45%] h-[90vh] ml-[15vh]"></div>
+<article
+    class="tab:h-fit cel:h-fit flex justify-between place-items-center w-screen h-screen"
+>
+    <div class="tab:hidden cel:hidden left w-[45%] h-[90vh] ml-[15vh]"></div>
 
-    <div class="cel:w-full pt-[5vh] w-[55%] h-screen flex flex-col px-[10vw]">
+    <div
+        class="tab:h-fit tab:w-full cel:w-full pt-[5vh] w-[55%] h-screen flex flex-col px-[10vw]"
+    >
         <h2
-            class="text-[var(--primary)] font-bold text-[1.2rem] tracking-[3px]"
+            class="2xl:text-[1.5rem] tab:text-[2.2rem] text-[var(--primary)] font-bold text-[1.2rem] tracking-[3px]"
         >
             MI MARCA DE DISCOS
         </h2>
-            <h2 class="cel:my-[1vh] bg-[var(--primary)] w-fit text-black px-[1vh] font-bold text-[2rem] tracking-[5px]">
-                ZENITH
-            </h2>
-        {parrafos.map(parrafo => (
-          <p>{parrafo}</p>
-        ))}
-        <a target="_blank" class="flex place-items-center w-fit gap-x-2 text-[var(--light)]" href="https://www.instagram.com/santizzaporta_/">
+        <h2
+            class="2xl:text-[2.5rem] tab:text-[3.5rem] cel:my-[1vh] bg-[var(--primary)] w-fit text-black px-[1vh] font-bold text-[2rem] tracking-[5px]"
+        >
+            ZENITH
+        </h2>
+        {parrafos.map((parrafo) => <p>{parrafo}</p>)}
+        <a
+            target="_blank"
+            class="2xl:gap-x-4 2xl:text-[1.2rem] tab:gap-x-4 tab:transform tab:text-[1.5rem] flex place-items-center w-fit gap-x-2 text-[var(--light)]"
+            href="https://www.instagram.com/santizzaporta_/"
+        >
             <span>Conoce más</span>
-            <span><ArrowRedirect /></span>
+            <span class="2xl:transform 2xl:scale-[1.4] tab:transform tab:scale-150"><ArrowRedirect /></span>
         </a>
     </div>
 </article>
@@ -38,13 +46,23 @@ import ArrowRedirect from "./zenith/ArrowRedirect.astro";
         box-shadow: -40px -40px 0px var(--primary);
     }
     p {
-        font-size: .9rem;
+        font-size: 0.9rem;
         color: #ccc;
-        margin: 2vh 0;   
+        margin: 2vh 0;
     }
     @media (max-width: 768px) {
         p {
             margin: 1vh 0;
+        }
+    }
+    @media (max-width: 1080px) {
+        p {
+            font-size: 1.5rem;
+        }
+    }
+    @media (min-width: 1536px) {    
+        p {
+            font-size: 1.2rem;
         }
     }
 </style>

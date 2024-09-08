@@ -8,14 +8,16 @@ import LogoAlt from "./LogoAlt.astro";
 const { isAlt } = Astro.props;
 ---
 
-<footer class="cel:mt-[25vh] w-screen h-fit">
-    <div class="cel:transform cel:scale-110 cel:block w-[70%] mx-auto flex justify-between py-[10vh]">
-        <article class="cel:flex cel:flex-col cel:justify-center cel:place-items-center">
-            {
-                isAlt ? <LogoAlt /> : <Logo />
-            }
+<footer class="cel:mt-[25vh] w-screen h-fit tab:mt-[20vh]">
+    <div
+        class="tab:block cel:transform cel:scale-110 cel:block w-[70%] mx-auto flex justify-between py-[10vh]"
+    >
+        <article
+            class="tab:transform tab:scale-150 tab:mb-[8vh] tab:flex tab:flex-col tab:justify-center tab:place-items-center cel:flex cel:flex-col cel:justify-center cel:place-items-center"
+        >
+            {isAlt ? <LogoAlt /> : <Logo />}
             <ul
-                class="mt-[10%] flex place-items-center justify-between w-fit gap-x-8"
+                class="2xl:gap-x-12 mt-[10%] flex place-items-center justify-between w-fit gap-x-8"
             >
                 <li>
                     <a
@@ -40,16 +42,20 @@ const { isAlt } = Astro.props;
                 </li>
             </ul>
         </article>
-        <article class="cel:mt-[5vh]">
+        <article
+            class="tab:flex tab:flex-col tab:w-full tab:justify-center tab:place-items-center cel:mt-[5vh]"
+        >
             <p
-                class="cel:text-center cel:text-pretty cel:justify-center cel:w-fit cel:mb-[3vh] text-[#ccc] text-[.8rem] flex place-items-center justify-between gap-x-2"
+                class=" 2xl:text-[1rem] tab:text-[1.5rem] cel:text-center cel:text-pretty cel:justify-center cel:w-fit cel:mb-[3vh] text-[#ccc] text-[.8rem] flex place-items-center justify-between gap-x-2"
             >
-                <span class="cel:hidden"><Copyright /></span>
+                <span class="2xl:transform 2xl:scale-[1.3] cel:hidden tab:hidden"><Copyright /></span>
                 <span
                     >2024 - Santiago Zaporta. Todos los derechos reservados</span
                 >
             </p>
-            <p class="cel:text-center text-[#ccc] text-[.8rem] text-right mt-[2%]">
+            <p
+                class="2xl:text-[1rem] tab:text-[1.5rem] cel:text-center text-[#ccc] text-[.8rem] text-right mt-[2%]"
+            >
                 <span>Desarrollado por</span>
                 <a
                     class="text-[var(--clr-pulsetech)] font-semibold"
@@ -60,3 +66,11 @@ const { isAlt } = Astro.props;
         </article>
     </div>
 </footer>
+
+<style>
+    @media (min-width: 1536px) {
+        li {
+            transform: scale(1.4);
+        }
+    }
+</style>

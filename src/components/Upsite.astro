@@ -3,11 +3,11 @@ import { Button } from "@nextui-org/react";
 ---
 
 <div
-    class="cel:z-50 top-0 left-0 pr-[3vh] pb-[3vh] fixed w-screen h-screen flex justify-end place-items-end"
+    class="z-50 top-0 left-0 pr-[3vh] pb-[3vh] fixed w-screen h-screen flex justify-end place-items-end"
 >
 <a href="#home">
     <Button
-    className="button-redirect p-[1.5vh] rounded-[7px] bg-transparent border-[1.5px] border-white"
+    className="tab:w-[5vh] tab:h-[5vh] tab:border-2 tab:rounded-[12px] button-redirect p-[1.5vh] rounded-[7px] bg-transparent border-[1.5px] border-white"
     isIconOnly
     size="lg"
     client:visible
@@ -15,7 +15,7 @@ import { Button } from "@nextui-org/react";
     <span class="transition duration-200 transform rotate-[45deg]">
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-arrow-up"
+            class="tab:transform tab:scale-150 icon icon-tabler icon-tabler-arrow-up"
             width="30"
             height="30"
             viewBox="0 0 24 24"
@@ -45,6 +45,7 @@ import { Button } from "@nextui-org/react";
         transition: opacity 0.2s ease, transform 0.2s ease;
         pointer-events: auto;
     }
+
     .button-redirect:hover {
         transform: scale(1.05);
     }

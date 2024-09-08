@@ -3,18 +3,18 @@ const { image, title, text } = Astro.props;
 ---
 
 <section
-    class="local-main relative w-screen h-screen flex justify-between place-items-center"
+    class="tab:mb-[15vh] tab:h-fit local-main relative w-screen h-screen flex justify-between place-items-center"
 >
-    <article class="cel:hidden left relative w-[50%] h-screen">
+    <article class="tab:hidden cel:hidden left relative w-[50%] h-screen">
         <img class="w-full h-full" src={image} />
     </article>
     <article
-        class="cel:w-4/5 cel:mx-auto flex flex-col justify-center place-items-center pb-[5%] w-[50%] h-screen"
+        class="tab:h-fit tab:py-[20vh] tab:w-full cel:w-4/5 cel:mx-auto flex flex-col justify-center place-items-center pb-[5%] w-[50%] h-screen"
     >
-        <h2 class="cel:text-center text-left w-[80%] text-white text-[3rem] font-bold">
+        <h2 class="2xl:text-[3.5rem] tab:text-center tab:text-[3.5rem] cel:text-center text-left w-[80%] tab:w-full text-white text-[3rem] font-bold">
             {title}
         </h2>
-        <p class="cel:text-center cel:w-full w-[60%] mx-auto text-pretty text-right mt-[3vh] text-[#ccc]">
+        <p class="2xl:text-[1.1rem] tab:text-center tab:text-[1.5rem] tab:w-[80%] tab:text-pretty cel:text-center cel:w-full w-[60%] mx-auto text-pretty text-right mt-[3vh] text-[#ccc]">
             {text}
         </p>
     </article>

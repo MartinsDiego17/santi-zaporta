@@ -5,15 +5,17 @@ import { Carousel } from "./testimonios/Carousel";
 
 <article
     id="testimonies"
-        class="w-full h-screen cel:mt-[10vh] cel:h-fit mt-[20vh] flex justify-center place-items-center flex-col"
+    class="tab:h-fit w-full h-screen cel:mt-[10vh] cel:h-fit mt-[20vh] flex justify-center place-items-center flex-col"
 >
     <div class="w-[80%] mx-auto flex flex-col justify-center">
         <h2
-            class="cel:mb-[5vh] mb-[10vh] cel:text-center flex place-items-center justify-center gap-x-4 text-[#ddd] font-bold text-[1.8rem]"
+            class="2xl:text-[2.2rem] 2xl:mb-[5vh] tab:text-[2.5rem] cel:mb-[5vh] mb-[10vh] cel:text-center flex place-items-center justify-center gap-x-4 text-[#ddd] font-bold text-[1.8rem]"
         >
-            <span>Testimonios de mis <span class="text-[var(--primary)]">clientes</span>
+            <span
+                >Testimonios de mis <span class="text-[var(--primary)]"
+                    >clientes</span
+                >
             </span>
-
         </h2>
         <Carousel client:visible />
     </div>
