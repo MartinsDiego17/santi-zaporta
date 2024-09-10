@@ -2,36 +2,51 @@
 import UserIcon from "./about/UserIcon.astro";
 ---
 
-<article id="about" class="tab:h-fit tab:pb-0 local-main relative w-screen h-screen cel:h-fit cel:pb-[20vh]">
+<article
+    id="about"
+    class="local-main relative w-screen h-screen cel:h-fit cel:pb-[20vh]"
+>
     <div
-        class="tab:h-fit tab:block cel:block cel:w-[90%] cel:h-fit relative z-10 flex justify-between place-items-center w-[80%] mx-auto pt-[10vh] h-screen"
+        class="cel:block cel:w-[90%] cel:h-fit relative z-10 flex justify-between place-items-center w-[80%] mx-auto pt-[10vh] h-screen"
     >
-        <article class="tab:w-full tab:text-pretty cel:w-full h-[60%] flex flex-col justify-start w-[70%]">
+        <article class="cel:w-full h-[60%] flex flex-col justify-start w-[70%]">
             <h2
-                class="2xl:text-2rem tab:text-[2.5rem] mb-[20px] w-fit flex place-items-center justify-between gap-x-4 text-[#ddd] font-bold text-[1.8rem]"
+                class="2xl:text-2rem mb-[20px] w-fit flex place-items-center justify-between gap-x-4 text-[#ddd] font-bold text-[1.8rem]"
             >
                 <span><UserIcon /></span>
                 <span>Acerca de mí</span>
             </h2>
-            <p class="text-pretty text-[#ccc] mb-[15px] text-[.9rem] font-light w-[95%]">
+            <p
+                class="text-pretty text-[#ccc] mb-[15px] text-[.9rem] font-light w-[95%]"
+            >
                 Como entrenador personal con diez años de experiencia, diseño
-                programas que <span>transforman vidas</span>. Mi enfoque asegura sesiones
-                efectivas, adaptadas a cada cliente y basadas en las <span>últimas tendencias en fitness</span>.
+                programas que <span>transforman vidas</span>. Mi enfoque asegura
+                sesiones efectivas, adaptadas a cada cliente y basadas en las <span
+                    >últimas tendencias en fitness</span
+                >.
             </p>
-            <p class="text-pretty text-[#ccc] mb-[15px] text-[.9rem] font-light w-[95%]">
-                Creo en el poder del ejercicio para <span>mejorar cuerpo y mente</span>. Me
-                especializo en entrenamiento funcional, fuerza y
-                acondicionamiento, ayudando a clientes a <span>alcanzar sus metas de
-                    manera segura</span>.
+            <p
+                class="text-pretty text-[#ccc] mb-[15px] text-[.9rem] font-light w-[95%]"
+            >
+                Creo en el poder del ejercicio para <span
+                    >mejorar cuerpo y mente</span
+                >. Me especializo en entrenamiento funcional, fuerza y
+                acondicionamiento, ayudando a clientes a <span
+                    >alcanzar sus metas de manera segura</span
+                >.
             </p>
             <p class="text-pretty text-[#ccc] text-[.9rem] font-light w-[95%]">
-                Con formación en <span>nutrición deportiva</span>, combino ejercicio y
-                alimentación para <span>lograr resultados</span>. Mi objetivo es que mis
-                clientes adopten un <span>estilo de vida saludable y sostenible</span>.
+                Con formación en <span>nutrición deportiva</span>, combino
+                ejercicio y alimentación para <span>lograr resultados</span>. Mi
+                objetivo es que mis clientes adopten un <span
+                    >estilo de vida saludable y sostenible</span
+                >.
             </p>
         </article>
 
-        <article class="tab:hidden cel:w-4/5 cel:mx-auto cel:justify-center cel:mt-[5vh] w-[35%] flex justify-end">
+        <article
+            class="cel:w-4/5 cel:mx-auto cel:justify-center cel:mt-[5vh] w-[35%] flex justify-end"
+        >
             <img
                 class="rounded-[5px] w-[70%] h-[70%]"
                 src="../../images/about/personal.webp"
@@ -41,27 +56,18 @@ import UserIcon from "./about/UserIcon.astro";
 </article>
 
 <style>
-
-@media (max-width: 768px) {
-    p {
-        width: 100%;
-        font-size: 1rem;
+    @media (max-width: 768px) {
+        p {
+            width: 100%;
+            font-size: 1rem;
+        }
     }
-}
 
-@media (max-width: 1080px) {
-    p {
-        font-size: 1.5rem;
-        width: 100%;
+    @media (min-width: 1536px) {
+        p {
+            font-size: 1.2rem;
+        }
     }
-}
-
-@media (min-width:1536px) {
-    p {
-        font-size: 1.2rem;
-    }
-}
-
     .local-main::before {
         content: "";
         position: absolute;
@@ -69,7 +75,14 @@ import UserIcon from "./about/UserIcon.astro";
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(black, transparent, transparent, transparent, transparent, transparent);
+        background: linear-gradient(
+            black,
+            transparent,
+            transparent,
+            transparent,
+            transparent,
+            transparent
+        );
     }
     img {
         padding: 8px;

@@ -9,7 +9,7 @@ import { Button } from "@nextui-org/react";
     class={`cel:py-[3vh] cel:px-[3vh] card transition duration-200 rounded-[5px] py-[5vh] px-[6vh] group`}
 >
     <h2
-        class="2xl:text-[1.3rem] tab:text-[2rem] pb-[2vh] text-[1rem] text-pretty text-white font-bold border-b-1 border-[var(--semidark)]"
+        class="2xl:text-[1.3rem] pb-[2vh] text-[1rem] text-pretty text-white font-bold border-b-1 border-[var(--semidark)]"
     >
         {title}
     </h2>
@@ -17,7 +17,7 @@ import { Button } from "@nextui-org/react";
     <a href=`/${route}`>
         <Button
             client:visible
-            className="2xl:text-[1.2rem] 2xl:py-[7.5%] 2xl:px-[12%] tab:text-[2rem] tab:font-bold tab:px-[10%] tab:py-[7%] mt-[10vh] hover:bg-[#ddd] px-[30px] font-semibold bg-white mx-auto text-black text-[.9rem] flex justify-center rounded-[5px]"
+            className="2xl:text-[1.2rem] 2xl:py-[7.5%] 2xl:px-[12%] mt-[10vh] hover:bg-[#ddd] px-[30px] font-semibold bg-white mx-auto text-black text-[.9rem] flex justify-center rounded-[5px]"
         >
             <span>Más información</span>
         </Button>
@@ -55,13 +55,6 @@ import { Button } from "@nextui-org/react";
             left 0s;
         height: 900px;
         opacity: 0;
-    }
-
-    @media (max-width: 1080px) {
-        .card::before {
-            width: 1500px;
-            height: 1500px;
-        }
     }
 
     .card:hover::before {

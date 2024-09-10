@@ -9,8 +9,7 @@ export default {
 	theme: {
 		extend: {
 			screens: {
-				'cel' : { 'max' : '768px' },
-				'tab' : { 'max' : '1080px' },
+				'cel': { 'max': '768px' },
 			}
 		},
 	},

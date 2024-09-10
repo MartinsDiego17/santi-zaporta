@@ -5,16 +5,16 @@ import Card from "./services/Card.astro";
 
 <article
 id="services"
-    class="tab:mt-[20vh] cel:h-fit flex-col flex justify-center place-items-center min-h-screen w-screen"
+    class="cel:h-fit flex-col flex justify-center place-items-center min-h-screen w-screen"
 >
     <div class="w-[80%]">
         <h2
-            class="2xl:text-[2.2rem] tab:mb-[5vh] tab:text-[2.5rem] mb-[10vh] w-full flex place-items-center justify-center gap-x-4 text-[#ddd] font-bold text-[1.8rem]"
+            class="2xl:text-[2.2rem] mb-[10vh] w-full flex place-items-center justify-center gap-x-4 text-[#ddd] font-bold text-[1.8rem]"
         >
             <span>Mis servicios</span>
         </h2>
 
-        <div class="tab:grid-cols-1 tab:gap-y-24 cel:grid-cols-1 cel:gap-x-0 cel:gap-y-10 grid grid-cols-3 gap-x-6">
+        <div class="cel:grid-cols-1 cel:gap-x-0 cel:gap-y-10 grid grid-cols-3 gap-x-6">
             {
                 services.map((service, index) => (
                     <Card
@@ -28,7 +28,7 @@ id="services"
         </div>
 
         <p
-            class="2xl:text-[.9rem] 2xl:w-full 2xl:text-pretty tab:text-[1.3rem] tab:w-full cel:w-full cel:text-center cel:text-balance text-[.65rem] w-[80%] text-balance mx-auto mt-[5vh] text-[#ccc]"
+            class="2xl:text-[.9rem] 2xl:w-full 2xl:text-pretty cel:w-full cel:text-center cel:text-balance text-[.65rem] w-[80%] text-balance mx-auto mt-[5vh] text-[#ccc]"
         >
             Ofrecemos <span class="text-[var(--light)]"
                 >servicios personalizados</span
