@@ -30,11 +30,11 @@ export const Carousel = () => {
                         <div className='embla__slide' key={index}>
                             <section className='w-full flex justify-between place-items-center'>
 
-                                <article className='w-[50%]'>
-                                    <img className='cel:h-[15vh] w-full max-h-[70vh] h-[50vh]' src={testimony.img} />
+                                <article className='w-[50%] flex justify-center'>
+                                    <img className='cel:h-[35vh] cel:w-full w-[60%] max-h-[80vh] h-[80vh]' src={testimony.before} />
                                 </article>
-                                <article className='w-[50%]'>
-                                    <img className='cel:h-[15vh] max-h-[70vh] w-full h-[50vh]' src={testimony.img} />
+                                <article className='w-[50%] flex justify-center'>
+                                    <img className='cel:h-[35vh] cel:w-full max-h-[80vh] w-[60%] h-[80vh]' src={testimony.after} />
                                 </article>
 
                             </section>

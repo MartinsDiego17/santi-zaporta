@@ -4,8 +4,8 @@ import Card from "./services/Card.astro";
 ---
 
 <article
-id="services"
-    class="cel:h-fit flex-col flex justify-center place-items-center min-h-screen w-screen"
+    id="services"
+    class="pt-[30vh] cel:h-fit flex-col flex justify-center place-items-center min-h-screen w-screen"
 >
     <div class="w-[80%]">
         <h2
@@ -14,7 +14,9 @@ id="services"
             <span>Mis servicios</span>
         </h2>
 
-        <div class="cel:grid-cols-1 cel:gap-x-0 cel:gap-y-10 grid grid-cols-3 gap-x-6">
+        <div
+            class="cel:grid-cols-1 cel:gap-x-0 cel:gap-y-10 grid grid-cols-3 gap-x-6"
+        >
             {
                 services.map((service, index) => (
                     <Card
@@ -39,7 +41,7 @@ id="services"
             > a tus necesidades y <span class="text-[var(--light)]"
                 >asesoría nutricional</span
             > para optimizar tu dieta. Además, nuestras <span
-                class="text-[var(--light)]">clases grupales</span
+                class="text-[var(--light)]">feedback</span
             > brindan un <span class="text-[var(--light)]"
                 >ambiente motivador</span
             > para el entrenamiento en equipo. Nuestro enfoque <span
@@ -50,3 +52,17 @@ id="services"
         </p>
     </div>
 </article>
+
+<style>
+    #services {
+        background: linear-gradient(
+            black,
+            transparent,
+            transparent,
+            transparent,
+            transparent,
+            transparent,
+            transparent
+        );
+    }
+</style>

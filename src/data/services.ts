@@ -2,34 +2,34 @@ export const services = [
     {
         title: "Ebooks y programas",
         features: [
-            "Planes personalizados",
-            "Seguimiento constante",
-            "Entrenadores certificados",
-            "Rutinas adaptadas",
-            "Consejos motivacionales"
+            "Planes de entrenamiento",
+            "Aprende a planificar",
+            "Material de aprendizaje",
+            "Seguimiento de progreso físico",
+            "Asesoría nutricional personalizada"
         ],
-        route: "entrenamientos"
+        route: "https://api.whatsapp.com/message/TGEKMJVVSAEDE1?autoload=1&app_absent=0"
     },
     {
-        title: "Asesoría personalizada 1 a 1",
+        title: "Asesoría 1 a 1",
         features: [
-            "Evaluación nutricional",
-            "Plan personalizado",
-            "Consejos dietéticos",
+            "Evaluación inicial",
+            "Planificación individual",
+            "Alimentación adaptada",
             "Soporte constante",
-            "Educación alimentaria"
+            "Acceso a material de entreno"
         ],
-        route: "alimentacion"
+        route: "https://api.whatsapp.com/message/TGEKMJVVSAEDE1?autoload=1&app_absent=0"
     },
     {
         title: "Asesorías con entrenadores",
         features: [
-            "Ambiente motivador",
-            "Clases variadas",
-            "Instructores energéticos",
-            "Rutinas dinámicas",
-            "Socialización activa"
+            "Evaluación inicial",
+            "Planificación individual con otros entrenadores",
+            "Alimentación adaptada",
+            "Soporte con entrenadores",
+            "Acceso a material de entreno"
         ],
-        route: "clases-grupales"
+        route: "https://api.whatsapp.com/message/TGEKMJVVSAEDE1?autoload=1&app_absent=0"
     }
 ];

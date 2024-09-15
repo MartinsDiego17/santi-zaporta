@@ -1,21 +1,17 @@
-import persona1 from "../../public/images/testimonios/persona1.webp";
-import persona2 from "../../public/images/testimonios/persona2.webp";
-import persona3 from "../../public/images/testimonios/persona3.webp";
+import fran_antes from "../../public/images/testimonios/fran-antes.webp";
+import fran_despues from "../../public/images/testimonios/fran-despues.webp";
+import mati_antes from "../../public/images/testimonios/mati-antes.webp";
+import mati_despues from "../../public/images/testimonios/mati-despues.webp";
 
 export const testimonios = [
     {
-        img: persona1.src,
-        testimony: "Gracias a mi entrenador personal, he visto resultados increíbles en solo unos meses. Me siento más fuerte y seguro que nunca",
-        name: "Lucía"
+        before: fran_antes.src,
+        after: fran_despues.src,
+        name: "Fran"
     },
     {
-        img: persona2.src,
-        testimony: "Los planes de entrenamiento personalizados realmente marcaron la diferencia. Nunca me había sentido tan motivado para cumplir mis objetivos de fitness.",
-        name: "Miguel"
+        before: mati_antes.src,
+        after: mati_despues.src,
+        name: "Mati"
     },
-    {
-        img: persona3.src,
-        testimony: "La guía y el apoyo de mi entrenador me ayudaron a lograr metas que nunca pensé que fueran posibles. Estoy en la mejor forma de mi vida",
-        name: "Pedro"
-    }
 ];

@@ -1,0 +1,102 @@
+<div
+class="cel:block cel:w-[90%] cel:h-fit relative z-10 flex justify-between place-items-center w-[80%] mx-auto pt-[10vh] h-screen"
+>
+<article class="cel:w-full h-[60%] flex flex-col justify-start w-[50%]">
+    <h2
+        class="2xl:text-2rem mb-[10%] w-fit flex place-items-center justify-between gap-x-4 text-[#ddd] font-bold text-[1.8rem]"
+    >
+        <span class="text-balance"
+            >¿Quién soy además de entrenador de powerlifting e
+            influencer?</span
+        >
+    </h2>
+    <p
+        class="text-pretty text-[#ccc] mb-[15px] text-[.9rem] font-light w-[95%]"
+    >
+        <p
+            class="text-pretty text-[#ccc] mb-[15px] text-[.9rem] font-light w-[95%]"
+        >
+            Nunca me cerré a un solo <span class="text-[--var-primary]"
+                >objetivo</span
+            >, sino que siempre <span class="text-[--var-primary]"
+                >quise aprender</span
+            > a cómo escalar en todos los <span
+                class="text-[--var-primary]">aspectos</span
+            > de mi vida, gracias a eso hoy en día estoy logrando mis <span
+                class="text-[--var-primary]">objetivos</span
+            > y transmitiendo a los demás que todos los <span
+                class="text-[--var-primary]">sueños</span
+            > se vuelven <span class="text-[--var-primary]"
+                >objetivos</span
+            > cuando nos damos cuenta lo <span
+                class="text-[--var-primary]">capaces</span
+            > que somos cuando nos proponemos <span
+                class="text-[--var-primary]">mejorar</span
+            >.
+        </p>
+    </p>
+</article>
+
+<article
+    class="cel:w-4/5 cel:mx-auto cel:justify-center cel:mt-[5vh] w-[50%] flex justify-end"
+>
+    <img
+        class="rounded-[5px] w-full h-full"
+        src="../../images/about/personal.webp"
+    />
+</article>
+</div>
+
+<style>
+    @media (max-width: 768px) {
+        p {
+            width: 100%;
+            font-size: 1rem;
+        }
+    }
+
+    @media (min-width: 1536px) {
+        p {
+            font-size: 1.2rem;
+        }
+    }
+    .local-main::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            black,
+            transparent,
+            transparent,
+            transparent,
+            transparent,
+            transparent
+        );
+    }
+    img {
+        padding: 8px;
+        filter: brightness(110%);
+        transform: rotate(5deg) scale(1.1);
+    }
+    p span {
+        color: var(--light);
+    }
+    .camino {
+        background: linear-gradient(black, rgba(0,0,0,0.3), rgba(0,0,0,0.4)) ,url(../../public/images/about/camino.webp);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .camino::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        backdrop-filter: blur(3px);
+    }
+</style>
