@@ -14,6 +14,10 @@ import ArrowHome from "./home/ArrowHome.astro";
         </h1>
     </div>
 
+    <a href="/acerca" class="hidden cel:block text-white font-extrabold px-[5vh] py-[1.5vh] local-about mt-[-50%] mb-[35%]">
+        Sobre mí
+    </a>
+
     <a href="#services">
         <ArrowHome />
     </a>
@@ -88,5 +92,8 @@ import ArrowHome from "./home/ArrowHome.astro";
 
     a {
         animation: moveDown 2s infinite ease-in-out;
+    }
+    .local-about {
+        background-color: rgba(194, 193, 193, 0.2);
     }
 </style>
