@@ -7,10 +7,10 @@ import CheckIcon from "./CheckIcon.astro";
     {
         features.map((feature: string) => (
             <li class="flex justify-between w-fit place-items-center gap-x-2">
-                <span class="2xl:transform 2xl:scale-125">
+                <span class="tablet-md:transform tablet-md:scale-125 2xl:transform 2xl:scale-125">
                     <CheckIcon />
                 </span>
-                <span class="text-pretty 2xl:text-[1rem]">{feature}</span>
+                <span class="tablet-md:text-[1rem] text-pretty 2xl:text-[1rem]">{feature}</span>
             </li>
         ))
     }

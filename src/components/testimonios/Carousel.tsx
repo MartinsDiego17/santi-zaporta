@@ -31,10 +31,10 @@ export const Carousel = () => {
                             <section className='w-full flex justify-between place-items-center'>
 
                                 <article className='w-[50%] flex justify-center'>
-                                    <img className='cel:h-[35vh] cel:w-full w-[60%] max-h-[80vh] h-[80vh]' src={testimony.before} />
+                                    <img className='tablet-md:w-full tablet-md:h-[65vh] cel:h-[35vh] cel:w-full w-[60%] max-h-[80vh] h-[80vh]' src={testimony.before} />
                                 </article>
                                 <article className='w-[50%] flex justify-center'>
-                                    <img className='cel:h-[35vh] cel:w-full max-h-[80vh] w-[60%] h-[80vh]' src={testimony.after} />
+                                    <img className='tablet-md:w-full cel:h-[35vh] tablet-md:h-[65vh] cel:w-full max-h-[80vh] w-[60%] h-[80vh]' src={testimony.after} />
                                 </article>
 
                             </section>

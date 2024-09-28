@@ -10,9 +10,11 @@ export default {
 		extend: {
 			screens: {
 				'cel': { 'max': '768px' },
-			}
+				'tablet-md': { 'min': '769px', 'max': '1024px' },
+				'tablet-lg': { 'min': '1025px', 'max': '1368px' },
+			},
 		},
 	},
 	darkMode: "class",
 	plugins: [nextui()],
-}
+};

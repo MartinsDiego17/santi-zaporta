@@ -10,29 +10,29 @@ import ArrowRedirect from "./zenith/ArrowRedirect.astro";
 <article
     class="cel:h-fit flex justify-between place-items-center w-screen h-screen"
 >
-    <div class="cel:hidden left w-[45%] h-[90vh] ml-[15vh]"></div>
+    <div class="tablet-md:hidden cel:hidden left w-[45%] h-[90vh] ml-[15vh]"></div>
 
     <div
-        class="cel:w-full pt-[5vh] w-[55%] h-screen flex flex-col px-[10vw]"
+        class="tablet-md:w-full cel:w-full pt-[5vh] w-[55%] h-screen flex flex-col px-[10vw]"
     >
         <h2
-            class="2xl:text-[1.5rem] text-[var(--primary)] font-bold text-[1.2rem] tracking-[3px]"
+            class="tablet-md:text-[1.5rem] 2xl:text-[1.5rem] text-[var(--primary)] font-bold text-[1.2rem] tracking-[3px]"
         >
             MI MARCA DE DISCOS
         </h2>
         <h2
-            class="2xl:text-[2.5rem] cel:my-[1vh] bg-[var(--primary)] w-fit text-black px-[1vh] font-bold text-[2rem] tracking-[5px]"
+            class="tablet-md:text-[2.5rem] 2xl:text-[2.5rem] cel:my-[1vh] bg-[var(--primary)] w-fit text-black px-[1vh] font-bold text-[2rem] tracking-[5px]"
         >
             ZENITH
         </h2>
         {parrafos.map((parrafo) => <p>{parrafo}</p>)}
         <a
             target="_blank"
-            class="2xl:gap-x-4 2xl:text-[1.2rem] flex place-items-center w-fit gap-x-2 text-[var(--light)]"
+            class="tablet-md:text-[1.3rem] 2xl:gap-x-4 2xl:text-[1.2rem] flex place-items-center w-fit gap-x-2 text-[var(--light)]"
             href="https://www.instagram.com/santizzaporta_/"
         >
             <span>Conoce más</span>
-            <span class="2xl:transform 2xl:scale-[1.4]"><ArrowRedirect /></span>
+            <span class="tablet-md:transform tablet-md:scale-[1.4] 2xl:transform 2xl:scale-[1.4]"><ArrowRedirect /></span>
         </a>
     </div>
 </article>
@@ -61,4 +61,9 @@ import ArrowRedirect from "./zenith/ArrowRedirect.astro";
             font-size: 1.2rem;
         }
     }
+    @media (min-width: 769px) and (max-width: 1024px) {
+    p {
+        font-size: 1.3rem;
+    }
+}
 </style>
