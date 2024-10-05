@@ -8,7 +8,7 @@ export const services = [
             "Seguimiento de progreso físico",
             "Asesoría nutricional personalizada"
         ],
-        route: "https://api.whatsapp.com/message/TGEKMJVVSAEDE1?autoload=1&app_absent=0"
+        route: "https://santiagozaporta.mitiendanube.com/e-book/"
     },
     {
         title: "Asesoría 1 a 1",
@@ -19,7 +19,7 @@ export const services = [
             "Soporte constante",
             "Acceso a material de entreno"
         ],
-        route: "https://api.whatsapp.com/message/TGEKMJVVSAEDE1?autoload=1&app_absent=0"
+        route: "https://santiagozaporta.mitiendanube.com/productos/coaching-1-a-1/"
     },
     {
         title: "Asesorías con entrenadores",
@@ -30,6 +30,6 @@ export const services = [
             "Soporte con entrenadores",
             "Acceso a material de entreno"
         ],
-        route: "https://api.whatsapp.com/message/TGEKMJVVSAEDE1?autoload=1&app_absent=0"
+        route: "https://santiagozaporta.mitiendanube.com/productos/coaching-1-a-1-con-entrenadores-del-equipo/"
     }
 ];
