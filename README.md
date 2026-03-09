@@ -1,54 +1,52 @@
-# Astro Starter Kit: Basics
+![Uploading image.png…]()
 
-```sh
-npm create astro@latest -- --template basics
-```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+# [Nombre del trainer]
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Entrenamiento personalizado online para personas que quieren resultados reales sin perder tiempo ni adivinar qué hacer.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+---
 
-## 🚀 Project Structure
+## Propuesta de valor
 
-Inside of your Astro project, you'll see the following folders and files:
+La mayoría de las personas que quiere entrenar no tiene un problema de motivación. Tiene un problema de dirección: demasiada información genérica, rutinas que no se adaptan a su vida y cero acompañamiento cuando las cosas no salen como esperaban.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Este servicio existe para cambiar eso. Cada cliente recibe un plan construido para su cuerpo, su objetivo y su contexto — y un seguimiento real a lo largo del proceso.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+---
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Para quién es
 
-Any static assets, like images, can be placed in the `public/` directory.
+Para personas que llevan tiempo postergando el entrenamiento porque no saben por dónde empezar, para quienes ya entrenaron antes pero no lograron resultados sostenibles, y para quienes quieren avanzar con método y sin improvisación.
 
-## 🧞 Commands
+No hace falta tener experiencia previa ni tiempo ilimitado. Hace falta compromiso y ganas de hacerlo bien.
 
-All commands are run from the root of the project, from a terminal:
+---
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Qué incluye el servicio
 
-## 👀 Want to learn more?
+**Plan de entrenamiento a medida**
+Rutinas diseñadas según el objetivo, el nivel y los recursos disponibles de cada persona. Se ajusta a medida que avanza el proceso.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+**Seguimiento y ajustes continuos**
+Revisión periódica del progreso con correcciones en tiempo real. El plan evoluciona junto con el cliente.
+
+**Soporte directo**
+Canal de comunicación permanente para consultas, dudas y ajustes. Sin respuestas automáticas ni tiempos de espera largos.
+
+**Orientación nutricional**
+Pautas generales de alimentación alineadas con el objetivo, sin planes rígidos ni dietas imposibles de sostener.
+
+---
+
+## Por qué trabajar con un entrenador personal online
+
+Entrenar con un profesional elimina la incertidumbre. Cada sesión tiene un propósito, cada semana tiene una dirección y cada decisión está respaldada por criterio y experiencia. El entrenamiento online permite además la misma calidad de acompañamiento sin depender de horarios fijos ni ubicación geográfica.
+
+---
+
+## Contacto
+
+¿Listo para empezar?
+
+**[contacto@nombredeltrainer.com](mailto:contacto@nombredeltrainer.com)**
