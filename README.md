@@ -1,14 +1,14 @@
 # Santiago Zaporta — Landing Page
 
-Landing page promocional para un personal trainer online. Proyecto personal de práctica y aprendizaje en desarrollo frontend, con foco en diseño, performance y buenas prácticas modernas.
+Landing page promocional para un personal trainer online. Proyecto real para un entrenador personal, con foco en diseño, performance y buenas prácticas modernas.
 
 ---
 
 ## Sobre el proyecto
 
-Este sitio nació como un ejercicio real: construir una landing page profesional de principio a fin, tomando decisiones de diseño, arquitectura y stack de forma autónoma. El objetivo no fue solo que funcione, sino que esté bien hecho — con código limpio, carga rápida y una experiencia visual coherente.
+Este sitio nació como un proyecto real: construir una landing page profesional para un entrenador personal de principio a fin, tomando decisiones de diseño, arquitectura y stack de forma autónoma. El objetivo no fue solo que funcione, sino que esté bien hecho — con código limpio, carga rápida y una experiencia visual coherente.
 
-El resultado es una página de una sola sección scrolleable, con estética oscura y minimalista, pensada para comunicar la propuesta de valor del servicio de forma directa y sin distracciones.
+El resultado es una página con estética oscura y minimalista, pensada para comunicar la propuesta de valor del servicio de forma directa y sin distracciones.
 
 ---
 
@@ -26,17 +26,7 @@ Desarrollada con **Astro**, aprovechando su modelo de generación estática para
 
 **Estética oscura y minimalista:** Una decisión deliberada que busca transmitir seriedad y foco. El diseño acompaña la propuesta del servicio sin competir con ella.
 
----
-
-## Aprendizajes
-
-- Estructuración de un proyecto Astro desde cero
-- Composición de layouts y componentes reutilizables en un contexto estático
-- Diseño responsive sin dependencias externas
-- Optimización de imágenes y tipografías para performance web
-
----
 
 ## Estado del proyecto
 
-Proyecto terminado. Sirve como pieza de portfolio y como referencia de cómo encarar una landing page estática de forma profesional.
+Trabajo terminado. Sirve como pieza de portfolio y como referencia de cómo encarar una landing page estática de forma profesional.
