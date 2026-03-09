@@ -1,52 +1,42 @@
-![Uploading image.png…]()
+# Santiago Zaporta — Landing Page
 
-
-# [Nombre del trainer]
-
-Entrenamiento personalizado online para personas que quieren resultados reales sin perder tiempo ni adivinar qué hacer.
+Landing page promocional para un personal trainer online. Proyecto personal de práctica y aprendizaje en desarrollo frontend, con foco en diseño, performance y buenas prácticas modernas.
 
 ---
 
-## Propuesta de valor
+## Sobre el proyecto
 
-La mayoría de las personas que quiere entrenar no tiene un problema de motivación. Tiene un problema de dirección: demasiada información genérica, rutinas que no se adaptan a su vida y cero acompañamiento cuando las cosas no salen como esperaban.
+Este sitio nació como un ejercicio real: construir una landing page profesional de principio a fin, tomando decisiones de diseño, arquitectura y stack de forma autónoma. El objetivo no fue solo que funcione, sino que esté bien hecho — con código limpio, carga rápida y una experiencia visual coherente.
 
-Este servicio existe para cambiar eso. Cada cliente recibe un plan construido para su cuerpo, su objetivo y su contexto — y un seguimiento real a lo largo del proceso.
-
----
-
-## Para quién es
-
-Para personas que llevan tiempo postergando el entrenamiento porque no saben por dónde empezar, para quienes ya entrenaron antes pero no lograron resultados sostenibles, y para quienes quieren avanzar con método y sin improvisación.
-
-No hace falta tener experiencia previa ni tiempo ilimitado. Hace falta compromiso y ganas de hacerlo bien.
+El resultado es una página de una sola sección scrolleable, con estética oscura y minimalista, pensada para comunicar la propuesta de valor del servicio de forma directa y sin distracciones.
 
 ---
 
-## Qué incluye el servicio
+## Stack
 
-**Plan de entrenamiento a medida**
-Rutinas diseñadas según el objetivo, el nivel y los recursos disponibles de cada persona. Se ajusta a medida que avanza el proceso.
-
-**Seguimiento y ajustes continuos**
-Revisión periódica del progreso con correcciones en tiempo real. El plan evoluciona junto con el cliente.
-
-**Soporte directo**
-Canal de comunicación permanente para consultas, dudas y ajustes. Sin respuestas automáticas ni tiempos de espera largos.
-
-**Orientación nutricional**
-Pautas generales de alimentación alineadas con el objetivo, sin planes rígidos ni dietas imposibles de sostener.
+Desarrollada con **Astro**, aprovechando su modelo de generación estática para obtener el mejor rendimiento posible sin JavaScript innecesario en el cliente. El diseño fue implementado desde cero en CSS, sin frameworks de UI, para tener control total sobre cada detalle visual.
 
 ---
 
-## Por qué trabajar con un entrenador personal online
+## Decisiones técnicas
 
-Entrenar con un profesional elimina la incertidumbre. Cada sesión tiene un propósito, cada semana tiene una dirección y cada decisión está respaldada por criterio y experiencia. El entrenamiento online permite además la misma calidad de acompañamiento sin depender de horarios fijos ni ubicación geográfica.
+**Astro sobre otros frameworks:** Para una landing page sin interactividad compleja, un framework que shippe cero JS por defecto es la elección correcta. El resultado es una página ultraliviana con excelentes métricas de Core Web Vitals.
+
+**Diseño propio sin librerías de componentes:** Usar Tailwind o Shadcn hubiera acelerado el proceso, pero el objetivo era practicar CSS real. Cada sección, tipografía y espaciado fue definido manualmente.
+
+**Estética oscura y minimalista:** Una decisión deliberada que busca transmitir seriedad y foco. El diseño acompaña la propuesta del servicio sin competir con ella.
 
 ---
 
-## Contacto
+## Aprendizajes
 
-¿Listo para empezar?
+- Estructuración de un proyecto Astro desde cero
+- Composición de layouts y componentes reutilizables en un contexto estático
+- Diseño responsive sin dependencias externas
+- Optimización de imágenes y tipografías para performance web
 
-**[contacto@nombredeltrainer.com](mailto:contacto@nombredeltrainer.com)**
+---
+
+## Estado del proyecto
+
+Proyecto terminado. Sirve como pieza de portfolio y como referencia de cómo encarar una landing page estática de forma profesional.
